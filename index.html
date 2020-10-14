@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" name="Exprecion" id="Exprecion" maxlength="10">
+    <input type="button" value="Evaluar" onclick="Ready()">
+    
+    <script>
+        const Ex_Re=/[A-Z]\d{3}\w{3}\W{3}/
+        function Ready(){
+         let ExprecionL=document.getElementById("Exprecion").value;
+         let R=document.getElementById("Resultado");
+         console.log(ExprecionL);
+         if(Ex_Re.test(ExprecionL)){
+            R.value="Correcto";
+            console.log("Correcto");
+         }else{
+            R.value="inCorrecto";
+            console.log("inCorrecto");
+         }
+        }
+        
+    </script>
+    <textarea name="" id="Resultado" cols="30" rows="10"></textarea>
+</body>
+</html>
