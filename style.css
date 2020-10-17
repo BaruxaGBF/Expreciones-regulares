@@ -7,5 +7,12 @@ body{
 #Resultado{
     resize: none;
     font-family:Tahoma;
+    font-size: 18px;  
+}
+
+#Expresion{
+    resize: none;
+    overflow: hidden;
+    font-family: Tahoma;
     font-size: 18px;
 }
