@@ -5,42 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Validar Contraseñas</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
     <header class="header">
         <a href="index.html"><img src="imagen/Sin título.png" title="Expresiones Regulares"></a>
     </header>
     <div>
-        <p><strong>La estructura de la expresion regular es 1 mayúscula seguida de 3 numeros, 3 minúsculas y 3 caracteres especiales</strong></p>
+        <p><strong>La estructura de la expresion regular es 1 mayúscula seguida de 3 numeros, 3 caracteres y 3 caracteres especiales</strong></p>
     </div>
     <div class="input">
         <div>
-            <label id="label-expresion">Expresión Regular</label>
-            <input type="text" name="Expresion" id="Expresion" maxlength="10" title="Intrduzca aquí la expresión a validar">
+            <label id="label-expresion"><strong>Expresión Regular</strong></label>
+            <input type="text" name="Expresion" id="Expresion" maxlength="10">
             <input type="button" id="Evaluar" value="EVALUAR" onclick="Ready()"> 
         </div>
         
     </div>
-    <div class="alert alert-danger" id="correcto">
-        <strong>Danger!</strong> You should <a href="#" class="alert-link">read this message</a>.
-    </div>
-    
+
+    <div id="resultado" class="tipo3"><p></p></div>
+
     <script>
         const Ex_Re=/[A-Z]\d{3}\w{3}\W{3}/
         function Ready(){
             let ExpresionL=document.getElementById("Expresion").value;
-            let R=document.getElementById("Resultado")
-            console.log(ExpresionL);
+            var elemento = document.getElementById("resultado");
             if(Ex_Re.test(ExpresionL)){
-                getElementById("correcto");
-                //R.value="Correcto";
-                //console.log("Correcto");
+                elemento.className = "tipo1";
+                document.getElementById("resultado").innerHTML = "<p>Expresión Regular Correcta</p>";
             }else{
-                //R.value="Incorrecto";
-                //console.log("Incorrecto");
+                elemento.className = "tipo2";
+                document.getElementById("resultado").innerHTML = "<p>Incorrecto. Intente nuevamente</p>";
             }
         }     
     </script>

@@ -22,10 +22,36 @@ div p{
     
 }
 
-#Resultado{
+#resultado{
     resize: none;
     font-family:Tahoma;
     font-size: 18px;  
+}
+
+.tipo1{
+    margin-left: 40%;
+    width: 350px;
+    border-radius: 9px;
+    background-color: rgb(98, 216, 98);
+}
+
+.tipo2{
+    margin-left: 40%;
+    width: 350px;
+    border-radius: 9px;
+    background-color: rgb(255, 132, 132);
+}
+
+.tipo3{
+    background-color: white;
+}
+
+.tipo1 p{
+    padding:0.5cm;
+}
+
+.tipo2 p{
+    padding:0.5cm;
 }
 
 #label-expresion{
@@ -53,32 +79,32 @@ div p{
     color: white;
 }
 
+
 .input{   
     background-color: burlywood;
-    border-radius:9px;
-    border: 1cm;
-    border-color: #CFD3C9;
+    border-radius:22px;
     width: 12.4cm;
     height: 8.5cm;
     display: flex;
-    justify-content: center;
     margin-left: 33.33%;
+    
 }
 
 .input div{  
     justify-content: center;
+    padding-top: 1.75cm;
 }
 
-.input #label-expresion{
-    margin-top: 1.5cm;
-    margin-left: 3.5cm;
+.input div #label-expresion{
+    margin-left: 4cm;
+    
 }
 .input #Expresion{
     margin-top: 0.5cm;
     margin-left: 2.5cm;
 }
 .input #Evaluar{
-    margin-top: 1cm;
+    margin-top: 1.25cm;
     margin-left: 5cm;
 }
 
