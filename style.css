@@ -13,8 +13,16 @@ body{
     padding-bottom: 0.25cm;
 }
 
+div p{
+    font-size: 18px;
+    font-family: Tahoma;
+    display: flex;
+    justify-content: center;
+    margin: 2cm 4%;
+    
+}
+
 #Resultado{
-    margin-top: 3cm;
     resize: none;
     font-family:Tahoma;
     font-size: 18px;  
@@ -26,12 +34,11 @@ body{
 }
 
 #Expresion{
-    margin-top: 3cm;
     resize: none;
     overflow: hidden;
     font-family: Tahoma;
-    padding:0.5cm;
-    font-size: 18px;
+    padding:0.25cm 0.5cm;
+    font-size: 20px;
     border-radius: 9px;
     border-color: black;
 }
@@ -46,7 +53,35 @@ body{
     color: white;
 }
 
-.input{
-    display: inline;
-   
+.input{   
+    background-color: burlywood;
+    border-radius:9px;
+    border: 1cm;
+    border-color: #CFD3C9;
+    width: 12.4cm;
+    height: 8.5cm;
+    display: flex;
+    justify-content: center;
+    margin-left: 33.33%;
 }
+
+.input div{  
+    justify-content: center;
+}
+
+.input #label-expresion{
+    margin-top: 1.5cm;
+    margin-left: 3.5cm;
+}
+.input #Expresion{
+    margin-top: 0.5cm;
+    margin-left: 2.5cm;
+}
+.input #Evaluar{
+    margin-top: 1cm;
+    margin-left: 5cm;
+}
+
+
+
+
