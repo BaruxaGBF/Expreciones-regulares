@@ -10,15 +10,23 @@ body{
     border-style: inset;
     border-width: 1px;
     border-color: #CFD3C9;
+    padding-bottom: 0.25cm;
 }
 
 #Resultado{
+    margin-top: 3cm;
     resize: none;
     font-family:Tahoma;
     font-size: 18px;  
 }
 
+#label-expresion{
+    font-family: Tahoma;
+    font-size: 22px;
+}
+
 #Expresion{
+    margin-top: 3cm;
     resize: none;
     overflow: hidden;
     font-family: Tahoma;
@@ -26,4 +34,19 @@ body{
     font-size: 18px;
     border-radius: 9px;
     border-color: black;
+}
+
+#Evaluar{
+    padding: 0.25cm .5cm;
+    border-radius: 9px;
+    border-color: black;
+    background-color: black;
+    font-family: Tahoma;
+    font-size: 14px;
+    color: white;
+}
+
+.input{
+    display: inline;
+   
 }

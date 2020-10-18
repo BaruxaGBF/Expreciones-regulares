@@ -5,18 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Validar Contraseñas</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
     <header class="header">
-        <a href="index.html"><img src="imagen/Sin título.png"></a>
+        <a href="index.html"><img src="imagen/Sin título.png" title="Expresiones Regulares"></a>
     </header>
-    <!--<input type="text" name="Expresion" id="Expresion" maxlength="10">-->
+    <div class="input">
+        <label for="Expresion" id="label-expresion">Expresión Regular</label>
+        <input type="text" name="Expresion" id="Expresion" maxlength="10" title="Intrduzca aquí la expresión a validar">
+        <input type="button" id="Evaluar" value="EVALUAR" onclick="Ready()"> 
+    </div>
+    <div class="alert alert-danger" id="correcto">
+        <strong>Danger!</strong> You should <a href="#" class="alert-link">read this message</a>.
+    </div>
     
-    <textarea id="Expresion" cols="30" rows="1" maxlength="20" placeholder="Expresión">
-        
-    
-    </textarea>
-    <input type="button" value="Evaluar" onclick="Ready()"> 
     <script>
         const Ex_Re=/[A-Z]\d{3}\w{3}\W{3}/
         function Ready(){
@@ -24,14 +29,14 @@
             let R=document.getElementById("Resultado")
             console.log(ExpresionL);
             if(Ex_Re.test(ExpresionL)){
-                R.value="Correcto";
-                console.log("Correcto");
+                getElementById("correcto");
+                //R.value="Correcto";
+                //console.log("Correcto");
             }else{
-                R.value="Incorrecto";
-                console.log("Incorrecto");
+                //R.value="Incorrecto";
+                //console.log("Incorrecto");
             }
         }     
     </script>
-    <textarea name="" id="Resultado" cols="30" rows="10"></textarea>
 </body>
 </html>
