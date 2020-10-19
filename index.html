@@ -11,7 +11,7 @@
         <a href="index.html"><img src="imagen/Sin título.png" title="Expresiones Regulares"></a>
     </header>
     <div>
-        <p><strong>La estructura de la expresión regular es 1 mayúscula seguida de 3 números, 3 caracteres y 3 caracteres especiales</strong></p>
+        <p><strong>La estructura de la expresión regular es Una letra Mayúscula seguida de 3 números luego seguida de 3 letras minúsculas y luego de tres caracteres especiales</strong></p>
     </div>
     <div class="input">
         <div>
@@ -25,7 +25,7 @@
     <div id="resultado" class="tipo3"><p></p></div>
 
     <script>
-        const Ex_Re=/[A-Z]\d{3}\w{3}\W{3}/
+        const Ex_Re=/[A-Z]\d{3}[a-z]{3}\W{3}/
         function Ready(){
             let ExpresionL=document.getElementById("Expresion").value;
             var elemento = document.getElementById("resultado");
